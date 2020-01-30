@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🕐 Schedule Action Time! 🕐</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .time {
+        font-family: 'Inconsolata', sans-serif;
+        color: green;
+        font-size: 4rem;
+        text-shadow: 0.5rem 0.25rem 1rem #3e3e3e;
+      }
+
+      .schedule {
+        padding-top: 1rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="fancy">
+      <img src="https://placedog.net/360" alt="placeholder dog image">
+    </div>
+    <h1 class="title home">Current Time:</h1>
+    <h2 class="time here">00:00 am</h2>
+    <p class="home zone-info"></p>
+    <br>
+    <br>
+    <p class="repo-link">
+      You can view <a href="https://github.com/edm00se/simple-action-scheduled-demo">this page's source in its GitHub repository</a>.
+    </p>
+
+    <script>
+      (function(){
+        // handles on DOM elements
+        const myTime = document.querySelector('.time.here');
+        const homeZoneTitle = document.querySelector('h1.title.home');
+        const detectedLocale = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        
+        // takes in a Date and formats it
+        function formatTime(dt) {
+          // returns formated textual date
+          return dt.toLocaleTimeString();
+        }
+
+        function loadTimes() {
+          // get the current time
+          const now = new Date();
+          // get the formatted text to show
+          myTime.innerText = formatTime(now);
+        }
+
+        function init() {
+          loadTimes();
+          // info about home time
+          homeZoneTitle.title = `Your browser's time zone was detected as ${detectedLocale}.`;
+
+          window.setInterval(loadTimes, 1000);
+        }
+
+        init();
+
+      })();
+    </script>
+  </body>
+</html>

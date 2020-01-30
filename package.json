@@ -1,0 +1,17 @@
+{
+  "name": "simple-action-scheduled-demo",
+  "version": "1.0.0",
+  "description": "provides a simple example of creating a GitHub Action which runs on a schedule",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "schedule",
+    "demo"
+  ],
+  "author": "Eric McCormick (https://edm00se.codes/)",
+  "license": "MIT"
+}
