@@ -12,6 +12,12 @@ This is defined in the GitHub Action yaml file and is specified to run on `sched
 
 If you're wondering why to use a scheduled action, there are some use cases for scheduled testing. This would likely not have anything to do with unit tests, but with integration tests or a generic browser test involving production site uptime, etc. This is not an ideal form of testing, but could be a stop gap under certain use cases.
 
+## Example
+
+You can see the scheduled executions under [the Actions tab, filtering on `event:schedule`](https://github.com/edm00se/simple-action-scheduled-demo/actions?query=event%3Aschedule).
+
+![screen shot of github actions screen for this repo, showing multiple events triggered by schedule](screenshot.png)
+
 ## References
 
 - [GitHub Actions docs](https://help.github.com/en/actions)
