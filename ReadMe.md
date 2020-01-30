@@ -8,9 +8,9 @@ This is defined in the GitHub Action yaml file and is specified to run on `sched
 
 ## Usage
 
-![GIF of person asking 'but why?'](https://media.giphy.com/media/s239QJIh56sRW/source.gif)
+![GIF of person asking 'but why?'](https://www.reactiongifs.com/r/but-why.gif)
 
-If you're wondering why to use a scheduled action, there are some use cases for scheduled testing. This would likely not have anything to do with unit tests, but with integration tests or a generic browser test involving product site uptime, etc. This is not an ideal form of testing, but could be a stop gap under certain use cases.
+If you're wondering why to use a scheduled action, there are some use cases for scheduled testing. This would likely not have anything to do with unit tests, but with integration tests or a generic browser test involving production site uptime, etc. This is not an ideal form of testing, but could be a stop gap under certain use cases.
 
 ## References
 
